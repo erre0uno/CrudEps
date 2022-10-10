@@ -11,17 +11,17 @@ saveLocal("Afiliados", afiliados);
 */
 
 var afiliadosDefault = [
-    {tipoId: "CEDULA DE CIUDANIA", numero: 1, paciente: "juan test", fecha: "2022-11-09", especialidad: "GINECOLOGIA"},
-    {tipoId: "OTRA", numero: 2, paciente: "pedro test", fecha: "2022-11-09", especialidad: "ODONTOLOGIA"},
-    {tipoId: "CEDULA DE EXTRANJERIA", numero: 3, paciente: "test test", fecha: "2022-11-09", especialidad: "MEDICO GENERAL"},
-    {tipoId: "OTRA", numero: 4, paciente: "maria test", fecha: "2022-11-09", especialidad: "OFTALMOLOGIA"},
-    {tipoId: "REGISTRO CIVIL", numero: 5, paciente: "mile test", fecha: "2022-11-09", especialidad: "ODONTOLOGIA"},
-    {tipoId: "OTRA", numero: 6, paciente: "juancho test", fecha: "2022-11-09", especialidad: "MEDICO GENERAL"},
-    {tipoId: "CEDULA DE EXTRANJERIA", numero: 7, paciente: "test test", fecha: "2022-11-09", especialidad: "ODONTOLOGIA"},
-    {tipoId: "REGISTRO CIVIL", numero: 8, paciente: "estiven test", fecha: "2022-11-09", especialidad: "MEDICO GENERAL"},
-    {tipoId: "OTRA", numero: 9, paciente: "mauricio test", fecha: "2022-11-09", especialidad: "ODONTOLOGIA"},
-    {tipoId: "CEDULA DE CIUDANIA", numero: 10, paciente: "paula test", fecha: "2022-11-09", especialidad: "PEDIATRIA"},
-    {tipoId: "REGISTRO CIVIL", numero: 11, paciente: "diana test", fecha: "2022-11-09", especialidad: "PEDIATRIA"},
+    {tipoId: "CEDULA DE CIUDANIA", numero: 1, paciente: "juan test", fecha: "2022-10-10T09:38", especialidad: "GINECOLOGIA"},
+    {tipoId: "OTRA", numero: 2, paciente: "pedro test", fecha: "2022-10-10T09:38", especialidad: "ODONTOLOGIA"},
+    {tipoId: "CEDULA DE EXTRANJERIA", numero: 3, paciente: "test test", fecha: "2022-10-10T09:38", especialidad: "MEDICO GENERAL"},
+    {tipoId: "OTRA", numero: 4, paciente: "maria test", fecha: "2022-10-10T09:38", especialidad: "OFTALMOLOGIA"},
+    {tipoId: "REGISTRO CIVIL", numero: 5, paciente: "mile test", fecha: "2022-10-10T09:38", especialidad: "ODONTOLOGIA"},
+    {tipoId: "OTRA", numero: 6, paciente: "juancho test", fecha: "2022-10-10T09:38", especialidad: "MEDICO GENERAL"},
+    {tipoId: "CEDULA DE EXTRANJERIA", numero: 7, paciente: "test test", fecha: "2022-10-10T09:38", especialidad: "ODONTOLOGIA"},
+    {tipoId: "REGISTRO CIVIL", numero: 8, paciente: "estiven test", fecha: "2022-10-10T09:38", especialidad: "MEDICO GENERAL"},
+    {tipoId: "OTRA", numero: 9, paciente: "mauricio test", fecha: "2022-10-10T09:38", especialidad: "ODONTOLOGIA"},
+    {tipoId: "CEDULA DE CIUDANIA", numero: 10, paciente: "paula test", fecha: "2022-10-10T09:38", especialidad: "PEDIATRIA"},
+    {tipoId: "REGISTRO CIVIL", numero: 11, paciente: "diana test", fecha: "2022-10-10T09:38", especialidad: "PEDIATRIA"},
 ];
 saveLocal("Afiliados", afiliadosDefault);
 

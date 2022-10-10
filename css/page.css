@@ -72,11 +72,7 @@ margin: 0.2rem 0.2rem;
         justify-items: center;
         align-content: center;
         text-align: center;
-    }
-    nav img{
-        display: none;
-    }
-    
+    }   
 }
 
 .card-body{

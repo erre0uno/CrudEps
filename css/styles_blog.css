@@ -124,7 +124,7 @@ footer a:hover {
 .color-flex {
     display: flex;
     padding: auto;
-    background-color: #b5b0b0d6;
+    background-color: #b5b0b000;
     margin-top: 5px;
 }
 
@@ -139,6 +139,7 @@ footer a:hover {
 .flex-box2 {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around ;
 }
 
 .flex-box3 {

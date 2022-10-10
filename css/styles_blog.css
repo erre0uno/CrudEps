@@ -1,0 +1,223 @@
+html {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: italic;
+}
+
+body {
+    background-color: #f0ebeb;
+    margin: 0;
+}
+
+/* fonts import
+font-family: 'Pacifico', cursive;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+/* ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ header ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+
+header {
+    background-color: #2907b1fe;
+    color: white;
+    padding: 5px 30px;
+}
+
+header h3 {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+}
+/*
+.container-center {
+    width: 400px;
+    margin: 0 auto;
+     border: 1px solid red; 
+}
+*/
+
+
+/* ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  POST ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+
+/*EFECTO EN EL OVER TRANSICION!!!!*/
+section article {
+    transition: box-shadow 0.3s ease;
+    /*  transition: *propiedad *tiempo transicion *algoritmoAcerleracion(ease,ease-in,ease-in-out,ease-out, linear) ; */
+
+    background-color: white;
+    margin: 1rem 0;
+    border-radius: 20px;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+section article:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+section article h5,
+section article p {
+    margin: 0.8rem;
+}
+
+section article h5 {
+    text-align: center;
+    font-size: 25px;
+}
+
+/* ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ Footer ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #2c14e1;
+    padding: 1.5rem;
+    color: white;
+}
+
+footer section {
+    float: right;
+}
+
+/*en este caso se deja el margen ya que auda a tener un espacio abajo
+  ya que lo que se floto tine dos lineas esa linea del p ayuda a dar simetria*/
+/*
+  footer p {
+    margin: 0;
+  }
+  */
+footer a {
+    transition: color 0.3s ease;
+    color: wheat;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: cornflowerblue;
+}
+
+/* ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ FLEX ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+/*
+
+  flex: trabaja con css3 
+  flex-direction: row|column|row-reverse|column-reverse
+  flex-wrap: nowrap|wrap|wrap-reverse = salto de linea 
+  
+  **sobre el row o eje horizontal >>**
+  justify-content: flex-star|center|flex-end|space-between|space-around|space-evenly
+  
+  **sobre el eje vertical **
+  align-items: flex-start|flex-end|center;       
+
+  **order=3; pone el orden del hijo desde el 0 todos los elementos tienen posicion=0
+*/
+
+.box {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    background-color: rgba(255, 0, 0, 0.238);
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px auto;
+    line-height: 100px;
+}
+
+.color-flex {
+    display: flex;
+    padding: auto;
+    background-color: #b5b0b0d6;
+    margin-top: 5px;
+}
+
+.flex-box0 {
+    flex-direction: row;
+}
+
+.flex-box1 {
+    flex-direction: column;
+}
+
+.flex-box2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-box3 {
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.flex-box4 {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flex-box5 {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.flex-box51 {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.flex-box52 {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-box53 {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.flex-box54 {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flex-box6 {
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.flex-box7 {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-box8 {
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/*################### juntas###########    */
+.flex-box81 {
+    align-items: stretch;
+    justify-content: center;
+}
+.box2 {
+    width: 100px;
+    margin: 5px;
+    background-color: rgba(241, 16, 16, 0.739);
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px auto;
+    line-height: 100px;
+}
+/*################### juntas###########    */
+
+.flex-box9 {
+    display: flex;
+    /*la propiedad se aplica al elemento*/
+    /* flex-grow: 2;*/
+}
+.flex-box10 {
+    display: flex;
+    /*la propiedad se aplica al elemento*/
+    /* flex-wrap: 2;*/
+}
+
+    .flex-box11 {
+    display: flex;
+}

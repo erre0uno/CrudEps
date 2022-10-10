@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Eps</title>
+  <meta name="author" content="Nelson Andres Montealegre">
+  <meta name="description" content="Blog de tecnologias como HTML,CSS,JavaScript">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+
+  <link type="image/png" sizes="32x32" rel="icon" href="./img/icons8-super-mario-ios-16-32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  
+  <script src="https://kit.fontawesome.com/904c4c8920.js" crossorigin="anonymous"></script>
+ 
+  <link rel="stylesheet" href="./css/styles_blog.css">
+  <link rel="stylesheet" href="./css/page.css">
+  
+  <script src="./js/funciones.js"></script>
+  <script src="./js/login.js"></script>
+ 
+
+
+</head>
+
+<body onload="">
+  <video id="videoBG" autoplay muted loop>
+    <source src="img/pelicula.mp4" type="video/mp4">
+  </video>
+  <nav class="navbar navbar-expand-sm bg-primary ">
+    <div class="container-fluid justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" alt="Logo" style="width:48px;height:45px;" class="rounded-pill">
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">MI EPS</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header>
+    <h3 id="titulo"> </h3>
+  </header>
+
+  <section class="container-center" id="padre">
+
+    <div class="container mt-4" style="text-align:center; max-width: 350px"  >
+      <div class="card">
+        <div class="card-header bg-info">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i> &nbsp; &nbsp; Login
+        </div>
+        <div class="card-body p-0">
+          <form id="formLogin">
+              <div class="flex-column">
+                <label> <i class="fa-solid fa-user"></i> &nbsp; usuario:</label>
+                <input  type="text" class="form-control" placeholder="admin" id="usuario" >
+                <label><i class="fa-solid fa-key"></i> &nbsp; contraseña</label>
+                <input type="password" class="form-control" placeholder="******" id="password">
+              </div>
+              <div class="d-flex justify-content-around ">
+                  <button type="button" class="btn btn-success mx-1" data-bs-toggle="modal" data-bs-target="#myModal">
+                    <i class="fa-solid fa-user-plus"></i>&nbsp; Registro
+                  </button>
+                  <button type="button" class="btn btn-primary mx-1" onclick="login()">
+                    <i class="fa-solid fa-person-walking-arrow-right"></i> &nbsp; Ingresar</button>
+              </div>
+          </form>
+          <p class="small"> user admin passwor admin</p>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div class="container" style="text-align:center; max-width: 350px">
+  
+      <!-- The Modal -->
+      <div class="modal justify-content-center" id="myModal" >
+        <div class="modal-dialog " style="max-width:380px ; margin-top: 8rem;  ">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header bg-success justify-content-center " >
+              <h4 class="modal-title"> Registro Usuario</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+  
+            <!-- Modal body -->
+            <div class="modal-body" >
+              <form id="formModal">
+                <div class="row">
+                  <div class="mb-3 mt-0 col">
+                    <label for="estudiante">
+                      <i class="fa-solid fa-user"></i> &nbsp;Usuario:
+                    </label>
+                    <input type="text" class="form-control"  placeholder="ingrese un usuario "
+                      name="estudiante" required id="modalUsuario" />
+                  </div>
+                </div>
+                <div class="mb-3 mt-0 col">
+                  <label for="estudiante">
+                    <i class="fa-solid fa-key"></i> &nbsp;Contraseña:
+                  </label>
+                  <input type="password" class="form-control"placeholder="***********" name="estudiante"
+                    required id="modalPassword" />
+                </div>
+            </div>
+          <div class="modal-footer  justify-content-center "  >
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar
+            </button>
+            <button type="button" class="btn btn-primary" onclick="crearUsuario()">Crear</button>
+          </div>
+  
+            </form>
+          </div>
+  
+          <!-- Modal footer -->
+  
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-fluid bg-danger" style="margin-top:65px ;"></div>
+  <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark mt-5">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="main.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="afiliados.html">Afiliados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="empleadores.html">Empleadores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="independientes.html" tabindex="-1" >Independientes</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+
+</html>

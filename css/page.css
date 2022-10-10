@@ -1,0 +1,115 @@
+.fondo-banner{
+    background-image: url("../img/banner4.jpg");
+    color: #f9f9f9;
+    min-height: 380px;
+  }
+  
+
+#panelAfiliados{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+#panelAfiliados article{
+    justify-content: space-around;
+}
+
+#panelVentas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 800px;
+}
+
+.post{
+    padding: 1rem 1rem;
+    flex-grow: 0,9;
+    margin: 1rem;
+}
+#botones{
+    display: flex   ;
+}
+#botones button{
+margin: 0.2rem 0.2rem;
+}
+
+.casilla-total{
+    text-align: center;
+    display: none ;
+}
+
+#videoBG{
+    position:fixed;
+    z-index: -1;
+}
+@media (min-aspect-ratio:16/9){
+    #videoBG{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9){
+    #videoBG{
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (max-width: 767px){
+    #videoBG{
+        background-size: cover;
+    }
+    #panelClientes{
+        flex-direction: column;
+    }
+    #panelVentas{
+        flex-direction: column;
+    }
+    nav{
+        font-size: 1rem;
+        justify-items: center;
+        align-content: center;
+        text-align: center;
+    }
+    nav img{
+        display: none;
+    }
+    
+}
+
+.card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.card-body *{
+    margin-top: 12px;
+}
+.card:focus{
+    background-color: green;
+}
+.card{
+    padding: 10px 20px;
+}
+nav{
+    background-color: rgb(237, 230, 230);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+nav{
+    width: 100%;
+}
+.nav-link{
+    color: aliceblue;
+}
+
+#login{
+    border-radius: 15px;
+}
+.boton-crear{
+    max-width: 300px;
+}

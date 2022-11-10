@@ -215,13 +215,30 @@ function eliminarAfiliadoById(pid) {
     //search user by id and return index
     let index = parseInt(buscarAfiliado(id));
     if (index != -1) {
-        afiliados = getLocal("Afiliados");
-        afiliados.splice(index, 1);
-        console.log(afiliados);
-        saveLocal("Afiliados", afiliados);
-        limpiarFormulario();
-        listarAfiliados();
-        swal("Listo!", "Afiliado id:" + id + " eliminado con exito !", "success");
+        debugger;
+
+        swal({
+            title: "Estas seguro ? ",
+            text: "Se eliminara el registro !",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+          })
+          .then((willDelete) => {
+            if (willDelete) {
+                afiliados = getLocal("Afiliados");
+                afiliados.splice(index, 1);
+                console.log(afiliados);
+                saveLocal("Afiliados", afiliados);
+                limpiarFormulario();
+                listarAfiliados();
+                swal("Listo!", "Afiliado id:" + id + " eliminado con exito !", "success");
+            } else {
+                swal("Accion cancelada !");
+
+            }
+          });
+
     }
     else {
         limpiarClientes();
